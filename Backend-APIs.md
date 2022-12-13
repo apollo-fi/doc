@@ -7,37 +7,37 @@
 
 ## APIs Overview
 
-| link                               | url                                | description                                       |   status   | modify date |
-|------------------------------------|------------------------------------|---------------------------------------------------|:----------:|:-----------:|
-| [1.1 LoginMessage](#1-1)           | GET /api/v1/login/message          | Get the login string to be signed                 | completed  |             |
-| [1.2 Login](#1-2)                  | POST /api/v1/login                 | Login                                             | completed  |             |
-| [2.1 GetUser](#2-1)                | GET /api/v1/user/{address}         | Get user info                                     | completed  |             |
-| [2.2 CheckUsername](#2-2)          | GET /api/v1/user/checkUsername     | Check if username is already used                 | completed  |             |
-| [2.3 UpdateUser](#2-3)             | PUT /api/v1/user                   | Update user info                                  | completed  |             |
-| [2.4 GetUserFollowing](#2-4)       | GET /api/v1/user/following         | Get user watchlist                                | completed  |             |
-| [2.5 GetUserFollower](#2-5)        | GET /api/v1/user/follower          | Get user fan list                                 | completed  |             |
-| [2.6 FollowOrUnFollow](#2-6)       | POST /api/v1/user/follow           | Follow/Unfollow                                   | completed  |             |
-| [2.7 GetUserActivity](#2-7)        | GET /api/v1/user/activity          | Paging to get the list of user activity           | completed  |             |
-| [2.8 FavoriteOrUnFavorite](#2-8)   | POST /api/v1/user/favorite         | Favorite/UnFavorite                               | completed  | 2022.11.29  |
-| [2.9 GetCollect](#2-9)             | GET /api/v1/user/collect           | Paging to get the list of user collect            | completed  | 2022.12.06  |
-| [2.10 GetFavorite](#2-10)          | GET /api/v1/user/favorite          | Paging to get the list of user favorite           | completed  | 2022.12.06  |
-| [2.11 UploadPreSignUrl](#2-11)     | POST /api/v1/user/uploadPreSignUrl | Get oss presigned url                             | completed  | 2022.12.08  |
-| [2.12 UploadCredential](#2-12)     | POST /api/v1/user/uploadCredential | Get oss tmp credential                            | completed  | 2022.12.08  |
-| [3.1 GetCollectionRanking](#3-1)   | GET /api/v1/ranking/collection     | Paging to get the list of collection ranking      | completed  |             |
-| [3.2 GetCollectionTrending](#3-2)  | GET /api/v1/trending/collection    | Paging to get the list of collection trending     | completed  | 2022.11.25  |
-| [4.1 Search](#4-1)                 | GET /api/v1/search                 | search collection/nft/user                        | completed  | 2022.11.25  |
-| [4.2 GetCollectionByAddress](#4-2) | GET /api/v1/collection/{address}   | Get collection detail                             | completed  | 2022.11.25  |
-| [4.3 GetCollectionActivity](#4-3)  | GET /api/v1/activity               | Paging to get the list of collection/nft activity | completed  | 2022.11.25  |
-| [4.4 SearchNft](#4-4)              | GET /api/v1/nfts                   | Search nfts                                       | completed  | 2022.11.25  |
-| [4.5 GetNftByTokenId](#4-5)        | GET /api/v1/nft                    | Get nft detail                                    | completed  | 2022.11.25  |
-| [4.6 GetNftCondition](#4-6)        | GET /api/v1/nftCondition           | Get condition                                     | completed  | 2022.11.25  |
-| [4.7 GetCollectionCondition](#4-7) | GET /api/v1/collectionCondition    | Get condition of collection                       | completed  | 2022.11.25  |
-| [4.8 GetMoreNft](#4-8)             | GET /api/v1/moreNft                | Get more nft                                      | completed  | 2022.12.02  |
-| [5.1 GetNFTPopular](#5-1)          | GET /api/v1/nft/popular            |                                                   | processing |             |
-| [6.1 GetOrder](#6-1)               | GET /api/v1/order                  | Paging to get the list of order                   | completed  |             |
-| [6.2 Listing](#6-2)                | POST /api/v1/order/listing         | listing                                           | completed  |             |
-| [6.3 Offer](#6-3)                  | POST /api/v1/order/offer           | offer                                             | completed  |             |
-| [6.4 CreateBnpl](#6-4)             | POST /api/v1/order/bnpl            | create bnpl order                                 | completed  |             |
+| link                               | url                               | description                                       |   status   | modify date |
+|------------------------------------|-----------------------------------|---------------------------------------------------|:----------:|:-----------:|
+| [1.1 LoginMessage](#1-1)           | GET /api/v1/login/message         | Get the login string to be signed                 | completed  |             |
+| [1.2 Login](#1-2)                  | POST /api/v1/login                | Login                                             | completed  |             |
+| [2.1 GetUser](#2-1)                | GET /api/v1/user/{address}        | Get user info                                     | completed  |             |
+| [2.2 CheckUsername](#2-2)          | GET /api/v1/user/checkUsername    | Check if username is already used                 | completed  |             |
+| [2.3 UpdateUser](#2-3)             | PUT /api/v1/user                  | Update user info                                  | completed  |             |
+| [2.4 GetUserFollowing](#2-4)       | GET /api/v1/user/following        | Get user watchlist                                | completed  |             |
+| [2.5 GetUserFollower](#2-5)        | GET /api/v1/user/follower         | Get user fan list                                 | completed  |             |
+| [2.6 FollowOrUnFollow](#2-6)       | POST /api/v1/user/follow          | Follow/Unfollow                                   | completed  |             |
+| [2.7 GetUserActivity](#2-7)        | GET /api/v1/user/activity         | Paging to get the list of user activity           | completed  |             |
+| [2.8 FavoriteOrUnFavorite](#2-8)   | POST /api/v1/user/favorite        | Favorite/UnFavorite                               | completed  | 2022.11.29  |
+| [2.9 GetCollect](#2-9)             | GET /api/v1/user/collect          | Paging to get the list of user collect            | completed  | 2022.12.06  |
+| [2.10 GetFavorite](#2-10)          | GET /api/v1/user/favorite         | Paging to get the list of user favorite           | completed  | 2022.12.06  |
+| [2.11 UploadPreSignUrl](#2-11)     | GET /api/v1/user/uploadPreSignUrl | Get oss presigned url                             | completed  | 2022.12.08  |
+| [2.12 UploadCredential](#2-12)     | GET /api/v1/user/uploadCredential | Get oss tmp credential                            | completed  | 2022.12.08  |
+| [3.1 GetCollectionRanking](#3-1)   | GET /api/v1/ranking/collection    | Paging to get the list of collection ranking      | completed  |             |
+| [3.2 GetCollectionTrending](#3-2)  | GET /api/v1/trending/collection   | Paging to get the list of collection trending     | completed  | 2022.11.25  |
+| [4.1 Search](#4-1)                 | GET /api/v1/search                | search collection/nft/user                        | completed  | 2022.11.25  |
+| [4.2 GetCollectionByAddress](#4-2) | GET /api/v1/collection/{address}  | Get collection detail                             | completed  | 2022.11.25  |
+| [4.3 GetCollectionActivity](#4-3)  | GET /api/v1/activity              | Paging to get the list of collection/nft activity | completed  | 2022.11.25  |
+| [4.4 SearchNft](#4-4)              | GET /api/v1/nfts                  | Search nfts                                       | completed  | 2022.11.25  |
+| [4.5 GetNftByTokenId](#4-5)        | GET /api/v1/nft                   | Get nft detail                                    | completed  | 2022.11.25  |
+| [4.6 GetNftCondition](#4-6)        | GET /api/v1/nftCondition          | Get condition                                     | completed  | 2022.11.25  |
+| [4.7 GetCollectionCondition](#4-7) | GET /api/v1/collectionCondition   | Get condition of collection                       | completed  | 2022.11.25  |
+| [4.8 GetMoreNft](#4-8)             | GET /api/v1/moreNft               | Get more nft                                      | completed  | 2022.12.02  |
+| [5.1 GetNFTPopular](#5-1)          | GET /api/v1/nft/popular           |                                                   | processing |             |
+| [6.1 GetOrder](#6-1)               | GET /api/v1/order                 | Paging to get the list of order                   | completed  |             |
+| [6.2 Listing](#6-2)                | POST /api/v1/order/listing        | listing                                           | completed  |             |
+| [6.3 Offer](#6-3)                  | POST /api/v1/order/offer          | offer                                             | completed  |             |
+| [6.4 CreateBnpl](#6-4)             | POST /api/v1/order/bnpl           | create bnpl order                                 | completed  |             |
 
 ## Error Code
 
@@ -487,7 +487,7 @@ Authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoiMHg1MjcyNzh
 ### 2.7.1 URL
 
 ```
-POST /api/v1/user/activity?page=1&pageSize=100&relocationAddress=0x43e4f9853e4c4e4cc6d606cfc9cec5a707b1f801
+GET /api/v1/user/activity?page=1&pageSize=100&relocationAddress=0x43e4f9853e4c4e4cc6d606cfc9cec5a707b1f801
 
 page: [1,~)
 pageSize: [1-100]
@@ -1471,7 +1471,7 @@ Content-Type: application/json
 ### 4.3.1 URL
 
 ```
-POST /api/v1/collection/activity?page=1&pageSize=100&relocationAddress=0x16c8a1419d60ea926ee1911cfc29a09128e85839
+GET /api/v1/collection/activity?page=1&pageSize=100&relocationAddress=0x16c8a1419d60ea926ee1911cfc29a09128e85839
 
 page: [1,~)
 pageSize: [1-100]
@@ -1673,7 +1673,8 @@ Content-Type: application/json
             }
         ],
         "bgColor": "",
-        "chainName": "Ethereum Mainnet",
+        "tokenType": "UNKNOWN",
+        "chainName": "Ethereum",
         "views": 8,
         "favorites": 0,
         "contractName": "",
@@ -1759,6 +1760,7 @@ Content-Type: application/json
 GET /api/v1/collectionCondition?keyword=nft
 
 keyword: search keyword
+owner: filter owner
 ```
 
 ### 4.7.2 Request
@@ -1789,7 +1791,8 @@ Content-Type: application/json
             "safelistRequestStatus": "",
             "totalSupply": "10000",
             "tradeTimes": 0,
-            "volume": 2
+            "volume": 2,
+            "count": 0 // the number of nft hold by the user when using query condition 'owner'
         },
         {
             "id": "0xa7aea29c280a75b67b45764cbf84e7eb2a3eeda9",
@@ -1800,7 +1803,8 @@ Content-Type: application/json
             "safelistRequestStatus": "",
             "totalSupply": "11",
             "tradeTimes": 0,
-            "volume": 1
+            "volume": 1,
+            "count": 0 // the number of nft hold by the user when using query condition 'owner'
         }
     ],
     "msg": "success"
