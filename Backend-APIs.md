@@ -11,6 +11,7 @@
 |------------------------------------|-----------------------------------|---------------------------------------------------|:----------:|:-----------:|
 | [1.1 LoginMessage](#1-1)           | GET /api/v1/login/message         | Get the login string to be signed                 | completed  |             |
 | [1.2 Login](#1-2)                  | POST /api/v1/login                | Login                                             | completed  |             |
+| [1.3 GetPrice](#1-3)               | GET /api/v1/price                 | Symbol Price                                      | completed  | 2022.12.13  |
 | [2.1 GetUser](#2-1)                | GET /api/v1/user/{address}        | Get user info                                     | completed  |             |
 | [2.2 CheckUsername](#2-2)          | GET /api/v1/user/checkUsername    | Check if username is already used                 | completed  |             |
 | [2.3 UpdateUser](#2-3)             | PUT /api/v1/user                  | Update user info                                  | completed  |             |
@@ -151,6 +152,39 @@ Content-Type: application/json
 The signature method used by the front end
 ```
 web3.eth.personal.sign
+```
+
+## <a id="1-3">1.3 GetPrice</a>
+
+### 1.3.1 URL
+
+```
+GET /api/v1/price
+```
+
+### 1.3.2 Request
+
+#### 1.3.2.1 header
+
+```
+Content-Type: application/json
+```
+
+#### 1.3.2.2 body
+
+```
+```
+
+### 1.3.3 response
+
+```
+{
+    "code": 200,
+    "data": {
+        "ETH": 1252.01
+    },
+    "msg": "success"
+}
 ```
 
 # 2. User APIs
@@ -2066,6 +2100,7 @@ Content-Type: application/json
                 "closedAt": "1970-01-01T00:00:00Z",
                 "counter": 0,
                 "currentPrice": "0",
+                "currentPriceUsd": "0",
                 "expirationTime": "1697784230",
                 "finalized": false,
                 "listingTime": "1666248230",
