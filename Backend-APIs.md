@@ -594,7 +594,8 @@ sort: 0.price low to high 1.price high to low 2.recently listed 3.common to rare
 status: array, optional value: Buy Now、Has Offers
 minPrice: min price
 maxPrice: max price
-traits: map[string]string
+traits: []string
+traitValues: []string
 ```
 
 ### 2.9.2 Request
@@ -719,7 +720,8 @@ sort: 0.price low to high 1.price high to low 2.recently listed 3.common to rare
 status: array, optional value: Buy Now、Has Offers
 minPrice: min price
 maxPrice: max price
-traits: map[string]string
+traits: []string
+traitValues: []string
 ```
 
 ### 2.10.2 Request
@@ -1541,7 +1543,8 @@ sort: 0.price low to high 1.price high to low 2.recently listed 3.common to rare
 status: array, optional value: Buy Now、Has Offers
 minPrice: min price
 maxPrice: max price
-traits: map[string]string
+traits: []string
+traitValues: []string
 ```
 
 ### 4.4.2 Request
@@ -1783,28 +1786,56 @@ Content-Type: application/json
     "code": 200,
     "data": [
         {
-            "id": "0xaba31c041e916e4141036f080b554d40cdb2bcd0",
-            "name": "Chinese Opera Mask Plus",
-            "contractAddress": "0xaba31c041e916e4141036f080b554d40cdb2bcd0",
+            "id": "0x000000000437b3cce2530936156388bff5578fc3",
+            "name": "My NFT",
+            "contractAddress": "0x000000000437b3cce2530936156388bff5578fc3",
+            "slug": "",
+            "symbol": "NFT",
             "chain": 1,
+            "chainName": "Ethereum",
+            "tokenType": "ERC721",
             "contractName": "",
             "safelistRequestStatus": "",
-            "totalSupply": "10000",
+            "floorPrice": 0,
+            "image": "",
+            "banner": "",
+            "owner": "",
+            "twitter": "",
+            "discord": "",
+            "instagram": "",
+            "website": "",
+            "totalSupply": "1",
             "tradeTimes": 0,
-            "volume": 2,
-            "count": 0 // the number of nft hold by the user when using query condition 'owner'
+            "volume": 0,
+            "royaltyAddress": "",
+            "royaltyFee": "",
+            "count": 45
         },
         {
-            "id": "0xa7aea29c280a75b67b45764cbf84e7eb2a3eeda9",
-            "name": "brokenToken 中华人民共和国成立 Mask Plus",
-            "contractAddress": "0xa7aea29c280a75b67b45764cbf84e7eb2a3eeda9",
+            "id": "0x222222222291749de47895c0c0a9b17e4fca8268",
+            "name": "Alchemy Remix Token",
+            "contractAddress": "0x222222222291749de47895c0c0a9b17e4fca8268",
+            "slug": "",
+            "symbol": "AMX",
             "chain": 1,
+            "chainName": "Ethereum",
+            "tokenType": "ERC721",
             "contractName": "",
             "safelistRequestStatus": "",
-            "totalSupply": "11",
+            "floorPrice": 0,
+            "image": "",
+            "banner": "",
+            "owner": "",
+            "twitter": "",
+            "discord": "",
+            "instagram": "",
+            "website": "",
+            "totalSupply": "1",
             "tradeTimes": 0,
-            "volume": 1,
-            "count": 0 // the number of nft hold by the user when using query condition 'owner'
+            "volume": 0,
+            "royaltyAddress": "",
+            "royaltyFee": "",
+            "count": 6
         }
     ],
     "msg": "success"
