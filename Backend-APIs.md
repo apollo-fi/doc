@@ -521,11 +521,12 @@ Authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoiMHg1MjcyNzh
 ### 2.7.1 URL
 
 ```
-GET /api/v1/user/activity?page=1&pageSize=100&relocationAddress=0x43e4f9853e4c4e4cc6d606cfc9cec5a707b1f801
+GET /api/v1/user/activity?page=1&pageSize=100&relocationAddress=0x43e4f9853e4c4e4cc6d606cfc9cec5a707b1f801&types=0&types=1
 
 page: [1,~)
 pageSize: [1-100]
 relocationAddress: user address
+types: String array, optional value: 0.Transfer 1.Mint 2.List 3.Offer 4.Bnpl 5.Cancel 6.Fufill 7.Repay 8.Broken
 ```
 
 ### 2.7.2 Request
@@ -1507,11 +1508,12 @@ Content-Type: application/json
 ### 4.3.1 URL
 
 ```
-GET /api/v1/collection/activity?page=1&pageSize=100&relocationAddress=0x16c8a1419d60ea926ee1911cfc29a09128e85839
+GET /api/v1/collection/activity?page=1&pageSize=100&relocationAddress=0x16c8a1419d60ea926ee1911cfc29a09128e85839&types=0&types=1
 
 page: [1,~)
 pageSize: [1-100]
 relocationAddress: use "collection contract address" to get collection activity; use "collection contract address + nft id" to get nft activity
+types: String array, optional value: 0.Transfer 1.Mint 2.List 3.Offer 4.Bnpl 5.Cancel 6.Fufill 7.Repay 8.Broken
 ```
 
 ### 4.3.2 Request
