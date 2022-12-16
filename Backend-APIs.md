@@ -639,7 +639,6 @@ traitValues: []string
 
 ```
 Content-Type: application/json
-Authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoiMHg1MjcyNzhBNzUwQTEzZEQ0MTU4QkNCMzFjNWZhODIzYjgxRjYwNERmIiwibmFtZSI6bnVsbCwiaWF0IjoxNjY0MTgzMjU1LCJleHAiOjE2NjQyNjk2NTUsImlzcyI6Ikxvb2tzIFJhcmUifQ.Azw362qxOZwW3HMkWHpEKvwrtuc7EF-Fmm4NIalUksE"
 ```
 
 #### 2.9.2.2 body
@@ -765,7 +764,6 @@ traitValues: []string
 
 ```
 Content-Type: application/json
-Authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoiMHg1MjcyNzhBNzUwQTEzZEQ0MTU4QkNCMzFjNWZhODIzYjgxRjYwNERmIiwibmFtZSI6bnVsbCwiaWF0IjoxNjY0MTgzMjU1LCJleHAiOjE2NjQyNjk2NTUsImlzcyI6Ikxvb2tzIFJhcmUifQ.Azw362qxOZwW3HMkWHpEKvwrtuc7EF-Fmm4NIalUksE"
 ```
 
 #### 2.10.2.2 body
